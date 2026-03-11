@@ -55,7 +55,7 @@ jobs:
         if: matrix.platform == 'linux'
         run: |
           sudo apt-get update
-          sudo apt-get install -y libgtk-3-0 libnotify4 libnss3 libxss1 libasound2t64 libxtst6 xdg-utils libatspi2.0-0 libdrm2 libgbm1 libxkbcommon0
+          sudo apt-get install -y libgtk-3-0 libnss3 libxss1 libxtst6 xdg-utils libatspi2.0-0 libdrm2 libgbm1 libxkbcommon0 libasound2t64 libnotify4 libgbm1
           npm ci
 
       - name: Install dependencies (Windows)
